@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motherboards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="Images/Logo.gif" alt="Logo"></div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchItems()">🔍</button>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-buttons">
+      <a href="cart.html" class="header-link">🛒 Cart</a>
+      <a href="favourites.html" class="header-link">❤️ Favourites</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Motherboards</h2>
+    </section>
+
+    <section class="product-list">  
+      <div class="product" data-name="ASUS Prime B450M">
+        <img src="Images/mother board/B450M.jpg" alt="Motherboard 1">
+        <p>ASUS Prime B450M</p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ASUS Prime B450M', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ASUS Prime B450M')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Asus ROG Strix B550">
+        <img src="Images/mother board/B550.jpg" alt="Motherboard 2">
+        <p>Asus ROG Strix B550</p>
+        <p class="price">$150</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Asus ROG Strix B550S', 150, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Asus ROG Strix B550')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI A520M">
+        <img src="Images/mother board/A520M.jpg" alt="Motherboard 3">
+        <p>MSI A520M</p>
+        <p class="price">$120</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI A520M', 120, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI A520M')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Asus Rog Strix Z790">
+        <img src="Images/mother board/Z790.jpg" alt="Motherboard 4">
+        <p>Asus Rog Strix Z790</p>
+        <p class="price">$180</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Asus Rog Strix Z790', 180, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Asus Rog Strix Z790')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="ASUS ROG X670E">
+        <img src="Images/mother board/X670E.jpg" alt="Motherboard 5">
+        <p>ASUS ROG X670E</p>
+        <p class="price">$250</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ASUS ROG X670E', 250, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ASUS ROG X670E')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI A620M">
+        <img src="Images/mother board/A620M.jpg" alt="Motherboard 6">
+        <p>MSI A620M</p>
+        <p class="price">$300</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI A620M', 300, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI A620M')">Add to Favourites</button>
+      </div>
+      <div class="product" data-name="MSI B650 ">
+        <img src="Images/mother board/B650.jpg" alt="Motherboard 1">
+        <p>MSI B650 </p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI B650 ', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI B650 ')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI B760">
+        <img src="Images/mother board/B760.jpg" alt="Motherboard 2">
+        <p>MSI B760S</p>
+        <p class="price">$150</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI B760', 150, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI B760')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI B840">
+        <img src="Images/mother board/B840.jpg" alt="Motherboard 3">
+        <p>MSI B840</p>
+        <p class="price">$120</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI B840', 120, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI B840')">Add to Favourites</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gamers Forge</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

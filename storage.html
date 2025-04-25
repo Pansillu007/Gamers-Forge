@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Devices</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="Images/Logo.gif" alt="Logo"></div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchItems()">🔍</button>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-buttons">
+      <a href="cart.html" class="header-link">🛒 Cart</a>
+      <a href="favourites.html" class="header-link">❤️ Favourites</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Storage Devices</h2>
+    </section>
+
+    <section class="product-list">
+      <div class="product" data-name="Corsair MP600 GS 500GB ">
+        <img src="Images/SSD/GS 500GB.jpg" alt="Corsair MP600 GS 500GB ">
+        <p>Corsair MP600 GS 500GB </p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair MP600 GS 500GB ', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair MP600 GS 500GB ')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair MP600 Pro XT 1TB">
+        <img src="Images/SSD/XT 1TB.jpg" alt="Corsair MP600 Pro XT 1TB">
+        <p>Corsair MP600 Pro XT 1TB</p>
+        <p class="price">$130</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair MP600 Pro XT 1TB', 130, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair MP600 Pro XT 1TB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair MP600 Pro XT 2TB ">
+        <img src="Images/SSD/XT 2TB.jpg" alt="Corsair MP600 Pro XT 2TB ">
+        <p>Corsair MP600 Pro XT 2TB </p>
+        <p class="price">$85</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair MP600 Pro XT 2TB ', 85, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair MP600 Pro XT 2TB ')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair MP700 Pro 2TB">
+        <img src="Images/SSD/2tb.jpg" alt="Corsair MP700 Pro 2TB">
+        <p>Corsair MP700 Pro 2TB</p>
+        <p class="price">$50</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair MP700 Pro 2TB', 50, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair MP700 Pro 2TB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI Spatium M450 V1 2TB">
+        <img src="Images/SSD/V1 2TB.jpg" alt="MSI Spatium M450 V1 2TB">
+        <p>MSI Spatium M450 V1 2TB</p>
+        <p class="price">$40</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI Spatium M450 V1 2TB', 40, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI Spatium M450 V1 2TB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Western Digital Black SN770 1TB">
+        <img src="Images/SSD/SN770 1TB.jpg" alt="Western Digital Black SN770 1TB">
+        <p>Western Digital Black SN770 1TB</p>
+        <p class="price">$180</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Western Digital Black SN770 1TB', 180, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Western Digital Black SN770 1TB')">Add to Favourites</button>
+      </div>
+      <div class="product" data-name="LEXAR NM620 NVMe PCIe Gen3 X4 2280 256GB">
+        <img src="Images/SSD/X4 2280 256GB.jpg" alt="LEXAR NM620 NVMe PCIe Gen3 X4 2280 256GB">
+        <p>LEXAR NM620 NVMe PCIe Gen3 X4 2280 256GB</p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('LEXAR NM620 NVMe PCIe Gen3 X4 2280 256GB', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('LEXAR NM620 NVMe PCIe Gen3 X4 2280 256GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="ADATA Legend 710 PCIe Gen3 X4 2280 1tb">
+        <img src="Images/SSD/X4 2280 1TB.jpg" alt="ADATA Legend 710 PCIe Gen3 X4 2280 1tb">
+        <p>ADATA Legend 710 PCIe Gen3 X4 2280 1tb</p>
+        <p class="price">$130</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ADATA Legend 710 PCIe Gen3 X4 2280 1tb', 130, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ADATA Legend 710 PCIe Gen3 X4 2280 1tb')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="MSI SPATIUM S270 SATA 2.5 960GB">
+        <img src="Images/SSD/S270 SATA 2.5 960GB.jpg" alt="MSI SPATIUM S270 SATA 2.5 960GB">
+        <p>MSI SPATIUM S270 SATA 2.5 960GB</p>
+        <p class="price">$85</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI SPATIUM S270 SATA 2.5 960GB', 85, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI SPATIUM S270 SATA 2.5 960GB')">Add to Favourites</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gamers Forge</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/favicon" href="icon/favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="Images/Logo.gif" alt="Logo"></div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchItems()">🔍</button>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+    <!-- Navigation Menu -->
+    <nav id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-buttons">
+      <a href="cart.html" class="header-link">🛒 Cart</a>
+      <a href="favourites.html" class="header-link">❤️ Favourites</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Memory</h2>
+    </section>
+
+    <section class="product-list">  
+      <div class="product" data-name="Corsair Vengeance LPX 16GB">
+        <img src="Images/memory/LPX 16GB.jpg" alt="Corsair Vengeance LPX">
+        <p>Corsair Vengeance LPX 16GB</p>
+        <p class="price">$60</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance LPX 16GB', 60, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance LPX 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Dominator Platinum RGB 32GB">
+        <img src="Images/memory/RGB 32GB.jpg" alt="Corsair Dominator Platinum RGB 32GB">
+        <p>Corsair Dominator Platinum RGB 32GB</p>
+        <p class="price">$65</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Dominator Platinum RGB 32GB', 65, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Dominator Platinum RGB 32GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Dominator Titanium RGB 64GB">
+        <img src="Images/memory/RGB 64GB.jpg" alt="Corsair Dominator Titanium RGB 64GB">
+        <p>Corsair Dominator Titanium RGB 64GB</p>
+        <p class="price">$55</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Dominator Titanium RGB 64GB', 55, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Dominator Titanium RGB 64GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Vengeance 8GB">
+        <img src="Images/memory/8GB.jpg" alt="Corsair Vengeance 8GB">
+        <p>Corsair Vengeance 8GB</p>
+        <p class="price">$70</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance 8GB', 70, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance 8GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="ADATA 16GB">
+        <img src="Images/memory/8GB.jpg" alt="ADATA 16GB">
+        <p>ADATA 16GB</p>
+        <p class="price">$50</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ADATA 16GB', 50, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ADATA 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Vengeance RGB PRO 16GB ">
+        <img src="Images/memory/RGB PRO 16GB.jpg" alt="Corsair Vengeance RGB PRO 16GB ">
+        <p>Corsair Vengeance RGB PRO 16GB </p>
+        <p class="price">$48</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance RGB PRO 16GB ', 48, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance RGB PRO 16GB ')">Add to Favourites</button>
+      </div>
+      <div class="product" data-name="Corsair Vengeance LPX 8GB ">
+        <img src="Images/memory/LPX 8GB.jpg" alt="Corsair Vengeance LPX 8GB ">
+        <p>Corsair Vengeance LPX 8GB </p>
+        <p class="price">$60</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance LPX 8GB ', 60, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance LPX 8GB ')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Vengeance 32GB">
+        <img src="Images/memory/Corsair Vengeance 32GB.jpg" alt="Corsair Vengeance 32GB">
+        <p>Corsair Vengeance 32GB</p>
+        <p class="price">$65</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance 32GB', 65, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance 32GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product" data-name="Corsair Vengeance RGB RS 8GB ">
+        <img src="Images/memory/RGB RS 8GB.jpg" alt="Corsair Vengeance RGB RS 8GB ">
+        <p>Corsair Vengeance RGB RS 8GB </p>
+        <p class="price">$55</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance RGB RS 8GB ', 55, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance RGB RS 8GB ')">Add to Favourites</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gamers Forge</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
